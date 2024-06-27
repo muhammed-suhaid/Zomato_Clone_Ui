@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:zomato_clone_ui/Screens/home_screen.dart';
 
 class BottomNavbar extends StatefulWidget {
   const BottomNavbar({super.key});
@@ -11,7 +12,7 @@ class _BottomNavbarState extends State<BottomNavbar> {
   int currentIndex = 0;
 
   List<Widget> body = [
-    const Center(child: Text('Delivery')),
+    const HomeScreen(),
     const Center(child: Text('History')),
     const Center(child: Text('Money')),
   ];
