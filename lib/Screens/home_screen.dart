@@ -67,35 +67,6 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: 20),
                   const ExploreTab(),
                   const SizedBox(height: 30),
-                  SizedBox(
-                    height: 300,
-                    child: ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: 3,
-                      itemBuilder: (context, index) => Column(
-                        children: [
-                          Container(
-                            margin: const EdgeInsets.symmetric(vertical: 5),
-                            height: 100,
-                            width: 200,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.red,
-                            ),
-                          ),
-                          Container(
-                            margin: const EdgeInsets.symmetric(vertical: 5),
-                            height: 100,
-                            width: 200,
-                            decoration: BoxDecoration(
-                              borderRadius: BorderRadius.circular(10),
-                              color: Colors.red,
-                            ),
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
                 ],
               ),
             ),
