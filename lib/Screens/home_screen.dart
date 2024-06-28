@@ -23,16 +23,17 @@ class HomeScreen extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  const Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 10),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(horizontal: 10),
                     child: Row(
                       children: [
                         Icon(
                           Icons.cloudy_snowing,
+                          color: Colors.blue.withOpacity(0.7),
                           size: 35,
                         ),
-                        SizedBox(width: 8),
-                        Expanded(
+                        const SizedBox(width: 8),
+                        const Expanded(
                           child: Text(
                             maxLines: 2,
                             overflow: TextOverflow.ellipsis,
