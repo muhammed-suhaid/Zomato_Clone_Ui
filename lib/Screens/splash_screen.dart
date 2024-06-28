@@ -14,7 +14,7 @@ class _SplashScreenState extends State<SplashScreen> {
   @override
   void initState() {
     super.initState();
-    Future.delayed(const Duration(seconds: 3), () { 
+    Future.delayed(const Duration(seconds: 3), () {
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(
@@ -31,6 +31,7 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Center(
         child: CachedNetworkImage(
           imageUrl: splashScreen,
+          fit: BoxFit.cover,
         ),
       ),
     );
