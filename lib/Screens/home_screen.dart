@@ -2,6 +2,7 @@ import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:zomato_clone_ui/components/explore_tab.dart';
 import 'package:zomato_clone_ui/components/my_appbar.dart';
+import 'package:zomato_clone_ui/components/my_divider.dart';
 import 'package:zomato_clone_ui/data/image_data.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -44,28 +45,11 @@ class HomeScreen extends StatelessWidget {
                   const SizedBox(height: 20),
                   CachedNetworkImage(imageUrl: banner),
                   const SizedBox(height: 20),
-                  Row(
-                    children: [
-                      Expanded(
-                        child: Divider(
-                          color: Colors.grey[300],
-                          thickness: 1,
-                        ),
-                      ),
-                      const Padding(
-                        padding: EdgeInsets.symmetric(horizontal: 8),
-                        child: Text('E X P L O R E'),
-                      ),
-                      Expanded(
-                        child: Divider(
-                          color: Colors.grey[300],
-                          thickness: 1,
-                        ),
-                      ),
-                    ],
-                  ),
+                  const MyDivider(text: 'EXPLORE'),
                   const SizedBox(height: 20),
                   const ExploreTab(),
+                  const SizedBox(height: 30),
+                  const MyDivider(text: 'WHAT\'S ON YOUR MIND'),
                   const SizedBox(height: 30),
                 ],
               ),
