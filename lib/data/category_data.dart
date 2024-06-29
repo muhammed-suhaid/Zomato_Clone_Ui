@@ -1,7 +1,7 @@
 import 'package:zomato_clone_ui/data/image_data.dart';
 import 'package:zomato_clone_ui/models/category_model.dart';
 
-List categories = [
+List<Category> categories = [
   Category(
     image: biriyani,
     name: 'Biriyani',
@@ -9,10 +9,6 @@ List categories = [
   Category(
     image: burger,
     name: 'Burger',
-  ),
-  Category(
-    image: cake,
-    name: 'Cake',
   ),
   Category(
     image: chicken,
@@ -23,8 +19,8 @@ List categories = [
     name: 'Chineese',
   ),
   Category(
-    image: falooda,
-    name: 'Falooda',
+    image: shawarma,
+    name: 'Shawarma',
   ),
   Category(
     image: fries,
@@ -47,7 +43,11 @@ List categories = [
     name: 'Pizza',
   ),
   Category(
-    image: shawarma,
-    name: 'Shawarma',
+    image: falooda,
+    name: 'Falooda',
+  ),
+  Category(
+    image: cake,
+    name: 'Cake',
   ),
 ];
