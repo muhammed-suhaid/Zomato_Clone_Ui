@@ -4,6 +4,7 @@ class Food {
   final String price;
   final String place;
   final String rating;
+  final String imageUrl;
 
   Food({
     required this.restaurantName,
@@ -11,5 +12,6 @@ class Food {
     required this.price,
     required this.place,
     required this.rating,
+    required this.imageUrl,
   });
 }
