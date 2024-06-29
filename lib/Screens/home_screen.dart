@@ -8,6 +8,7 @@ import 'package:zomato_clone_ui/components/filter_tab.dart';
 import 'package:zomato_clone_ui/components/food_card.dart';
 import 'package:zomato_clone_ui/components/my_appbar.dart';
 import 'package:zomato_clone_ui/components/my_divider.dart';
+import 'package:zomato_clone_ui/components/notice_text.dart';
 import 'package:zomato_clone_ui/data/image_data.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -28,26 +29,7 @@ class HomeScreen extends StatelessWidget {
               ),
               child: Column(
                 children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 10),
-                    child: Row(
-                      children: [
-                        Icon(
-                          Icons.cloudy_snowing,
-                          color: Colors.blue.withOpacity(0.7),
-                          size: 35,
-                        ),
-                        const SizedBox(width: 8),
-                        const Expanded(
-                          child: Text(
-                            maxLines: 2,
-                            overflow: TextOverflow.ellipsis,
-                            'It\'s slippery outside! Delivery partners may drive slower during rains.',
-                          ),
-                        ),
-                      ],
-                    ),
-                  ),
+                  const NoticeText(),
                   const SizedBox(height: 20),
                   CachedNetworkImage(imageUrl: banner),
                   const SizedBox(height: 20),
