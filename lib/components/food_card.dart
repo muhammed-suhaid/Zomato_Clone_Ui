@@ -1,5 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:zomato_clone_ui/data/image_data.dart';
 
 class FoodCard extends StatelessWidget {
@@ -34,6 +35,15 @@ class FoodCard extends StatelessWidget {
                 child: CachedNetworkImage(
                   imageUrl: burgerPhoto,
                   fit: BoxFit.fitWidth,
+                ),
+              ),
+              const Positioned(
+                top: 8,
+                right: 8,
+                child: Icon(
+                  Icons.favorite_border_rounded,
+                  size: 30,
+                  color: Colors.white,
                 ),
               ),
               Positioned(
@@ -94,7 +104,7 @@ class FoodCard extends StatelessWidget {
                               ),
                             ],
                           ),
-                          Text('kerala • Burger • 200 rs for one')
+                          const Text('kerala • Burger • 200 rs for one')
                         ],
                       ),
                     ),
