@@ -32,7 +32,7 @@ List<Food> foods = [
     price: "₹99",
     place: "kozhikode",
     rating: "4.4",
-    imageUrl: friedChickenPhoto, 
+    imageUrl: friedChickenPhoto,
   ),
   Food(
     restaurantName: "Pizza Palace",

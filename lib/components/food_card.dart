@@ -31,10 +31,10 @@ class FoodCard extends StatelessWidget {
           child: Stack(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(10), 
+                borderRadius: BorderRadius.circular(10),
                 child: CachedNetworkImage(
                   imageUrl: food.imageUrl,
-                  fit: BoxFit.cover ,  
+                  fit: BoxFit.cover,
                 ),
               ),
               const Positioned(

@@ -29,7 +29,7 @@ class CategoryTab extends StatelessWidget {
                 ),
                 padding: const EdgeInsets.all(8),
                 height: 120,
-                width: 120, 
+                width: 120,
                 child: Stack(
                   alignment: Alignment.center,
                   children: [
@@ -37,7 +37,7 @@ class CategoryTab extends StatelessWidget {
                       imageUrl: category1.image,
                     ),
                     Positioned(
-                      bottom: -1,  
+                      bottom: -1,
                       child: Text(category1.name),
                     ),
                   ],
