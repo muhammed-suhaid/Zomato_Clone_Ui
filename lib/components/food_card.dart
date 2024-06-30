@@ -1,6 +1,6 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:zomato_clone_ui/data/image_data.dart';
+import 'package:zomato_clone_ui/data/food_data.dart';
 
 class FoodCard extends StatelessWidget {
   const FoodCard({super.key});
@@ -10,8 +10,9 @@ class FoodCard extends StatelessWidget {
     return ListView.builder(
       shrinkWrap: true,
       physics: const NeverScrollableScrollPhysics(),
-      itemCount: 2,
+      itemCount: foods.length,
       itemBuilder: (context, index) {
+        final food = foods[index];
         return Container(
           height: 240,
           width: double.infinity,
@@ -30,10 +31,10 @@ class FoodCard extends StatelessWidget {
           child: Stack(
             children: [
               ClipRRect(
-                borderRadius: BorderRadius.circular(10),
+                borderRadius: BorderRadius.circular(10), 
                 child: CachedNetworkImage(
-                  imageUrl: burgerPhoto,
-                  fit: BoxFit.fitWidth,
+                  imageUrl: food.imageUrl,
+                  fit: BoxFit.cover ,  
                 ),
               ),
               const Positioned(
@@ -69,9 +70,9 @@ class FoodCard extends StatelessWidget {
                         children: [
                           Row(
                             children: [
-                              const Text(
-                                'Restaurant name',
-                                style: TextStyle(
+                              Text(
+                                food.restaurantName,
+                                style: const TextStyle(
                                   fontSize: 18,
                                   fontWeight: FontWeight.bold,
                                 ),
@@ -85,15 +86,15 @@ class FoodCard extends StatelessWidget {
                                   borderRadius: BorderRadius.circular(6),
                                   color: Colors.green[700],
                                 ),
-                                child: const Row(
+                                child: Row(
                                   children: [
                                     Text(
-                                      '4.3',
-                                      style: TextStyle(
+                                      food.rating,
+                                      style: const TextStyle(
                                         color: Colors.white,
                                       ),
                                     ),
-                                    Icon(
+                                    const Icon(
                                       Icons.star,
                                       size: 15,
                                       color: Colors.white,
@@ -103,7 +104,8 @@ class FoodCard extends StatelessWidget {
                               ),
                             ],
                           ),
-                          const Text('kerala • Burger • 200 rs for one')
+                          Text(
+                              '${food.foodName} • ${food.place} • ${food.price}')
                         ],
                       ),
                     ),

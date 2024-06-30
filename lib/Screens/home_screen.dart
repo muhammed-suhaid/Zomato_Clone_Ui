@@ -1,7 +1,5 @@
 import 'package:cached_network_image/cached_network_image.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 import 'package:zomato_clone_ui/components/categroy_tab.dart';
 import 'package:zomato_clone_ui/components/explore_tab.dart';
 import 'package:zomato_clone_ui/components/filter_tab.dart';
