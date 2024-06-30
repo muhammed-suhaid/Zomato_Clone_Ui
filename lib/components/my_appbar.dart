@@ -94,14 +94,7 @@ class MyAppbar extends StatelessWidget {
                         color: Colors.white,
                       ),
                       child: const Center(
-                        child: Text(
-                          'S',
-                          style: TextStyle(
-                            fontSize: 22,
-                            color: Colors.blue,
-                            fontWeight: FontWeight.normal,
-                          ),
-                        ),
+                        child: Icon(Icons.g_translate),
                       ),
                     ),
                     const SizedBox(width: 10),
